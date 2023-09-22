@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+</head>
+<body>
+
+  <div class="main-login">
+      <div class="esquerda-login">
+        <h1>Faça login<br>E acesse o site do Paulão</h1>
+        <img src="img-dev.svg" class="esquerda-login-img" alt="Animação">
+      </div>
+      <div class="direita-login">
+        <div class="card-login">
+            <h1>Login</h1>
+            <div class="textos-acesso">
+                <label for="usuario">Usuário</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Usuário">
+            </div>
+            <div class="textos-acesso">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Senha">
+            </div>
+            <button class="botao-login" onclick="validarLogin()">Login</button>
+      </div>
+  </div>
+
+  <script>
+    function validarLogin() {
+      var usuario = document.getElementById("usuario").value;
+      var senha = document.getElementById("senha").value;
+
+      if (usuario === "admin" && senha === "admin") {
+        window.location.href = "https://br.ifunny.co/picture/a-camada-de-antonio-ta-pegando-fogo-hoje-ta-calor-ICRicgq59";
+
+      } else {
+        alert("Usuário ou senha incorretos, tente novamente.");
+      }
+    }
+
+  </script>
+</body>
+</html>
